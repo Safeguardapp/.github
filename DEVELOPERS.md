@@ -7,7 +7,7 @@ readable messages** that are easy to follow when looking through the **project h
 we use the git commit messages to **generate the change log**.
 
 ### Branches
-For every functionality, we use a different branch. These branches follow the format `<type>/<subject>`, where `subject` is a description of the issue (preferable the same as Jira, but in English). `type` can be any of the following, and are the same `type`s used in Pull Requests:
+For every functionality, we use a different branch. These branches follow the format `<type>/<jiraId>-<subject>`, where `subject` is a description of the issue (preferable the same as Jira, but in English), `jiraId` is the issue number in Jira (for example `SG-0001`, leave out when not connected to Jira issue), `type` can be any of the following, and are the same `type`s used in Pull Requests:
 
 * **feature**: A new feature
 * **fix**: A bug fix
