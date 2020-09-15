@@ -1,5 +1,5 @@
 <!--- Provide a general summary of your changes in the Title above using this format: -->
-<!--- [<type>] <subject>  -->
+<!--- [<type>] <jiraId> <subject>  -->
 <!--- type must be one of the following: -->
 <!--- **feature**: A new feature -->
 <!--- **fix**: A bug fix -->
@@ -14,6 +14,9 @@
 <!--- **maintenance**: General maintenance -->
 <!--- **chore**: Changes to the build process or auxiliary tools and libraries such as documentation
   generation -->
+
+<!--- jiraId is the ticket number from Jira, for example: SG-1337 -->
+<!--- subject is a concise description of the PR. This will be put into the Changelog, so get this right. -->
 
 ## Description
 <!--- Describe your changes in detail -->
