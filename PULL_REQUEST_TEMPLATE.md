@@ -24,6 +24,11 @@
 ## Jira Tickets
 <!--- List the urls of the Jira tickets that are part of these changes -->
 
+## Information Security
+- [ ] Described changes in Privacy/Security, if any.
+<!-- Describe changes in Privacy/Security in detail -->
+<!-- Contact the Security Officer for risk analysis -->
+
 ## Checklist:
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
