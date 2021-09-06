@@ -32,8 +32,6 @@ Chore: Changes to the build process or auxiliary tools and libraries such as doc
 <!-- Describe changes in Privacy/Security in detail -->
 <!-- Contact the Security Officer for risk analysis -->
 - [ ] Added a dependency. If checked, add it to the spreadsheet found here: https://sfgrd.nl/3E1jBrY
-<!-- Describe changes in Privacy/Security in detail -->
-<!-- Contact the Security Officer for risk analysis -->
 
 ## Checklist:
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
