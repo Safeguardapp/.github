@@ -24,9 +24,6 @@ Chore: Changes to the build process or auxiliary tools and libraries such as doc
 ## Description
 <!--- Describe your changes in detail -->
 
-## Jira Tickets
-<!--- List the urls of the Jira tickets that are part of these changes -->
-
 ## Information Security
 - [ ] Described changes in Privacy/Security, if any.
 <!-- Describe changes in Privacy/Security in detail -->
