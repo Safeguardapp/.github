@@ -34,3 +34,4 @@ Chore: Changes to the build process or auxiliary tools and libraries such as doc
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 - [ ] I have added tests to cover my changes.
+- [ ] I have added a model with the corresponding cascades, fill in https://sfgrd.nl/3VFwr7n
