@@ -22,7 +22,10 @@ Chore: Changes to the build process or auxiliary tools and libraries such as doc
 -->
 
 ## Description
-<!--- Describe your changes in detail -->
+<!--- Describe your changes in detail. Copilot does the heavy lifting, just edit that if needed -->
+copilot:summary
+
+copilot:poem
 
 ## Information Security
 - [ ] Described changes in Privacy/Security, if any.
@@ -35,3 +38,6 @@ Chore: Changes to the build process or auxiliary tools and libraries such as doc
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 - [ ] I have added tests to cover my changes.
 - [ ] I have added a model with the corresponding cascades, fill in https://sfgrd.nl/3VFwr7n
+
+## How
+copilot:walkthrough
