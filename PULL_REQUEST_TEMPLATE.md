@@ -22,8 +22,7 @@ Chore: Changes to the build process or auxiliary tools and libraries such as doc
 -->
 
 ## Description
-<!--- Describe your changes in detail. Copilot does the heavy lifting, just edit that if needed -->
-copilot:summary
+<!--- Describe your changes in detail -->
 
 ## Information Security
 - [ ] Described changes in Privacy/Security, if any.
