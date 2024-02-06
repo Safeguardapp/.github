@@ -35,3 +35,4 @@ Chore: Changes to the build process or auxiliary tools and libraries such as doc
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 - [ ] I have added tests to cover my changes.
 - [ ] I have added a model with the corresponding cascades, fill in https://sfgrd.nl/3VFwr7n
+- [ ] I have checked the Gitbook page for code review & unit test suggestions found here: https://app.gitbook.com/o/-MUKYLddTYNN3QEkR5JF/s/-MUhmjf5u2K1v39Mh4Ic/internal-processes-and-tools/api-code-reviews-and-unit-tests
