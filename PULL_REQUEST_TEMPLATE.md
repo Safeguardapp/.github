@@ -25,6 +25,13 @@ Chore: Changes to the build process or auxiliary tools and libraries such as doc
 <!--- Describe your changes in detail -->
 
 
+## How to test
+<!--- For the reviewer, who functionally tests this change as part of the
+review. Describe the steps to follow, required test data or setup, and the
+expected result. Write it for someone who does not know the code. These
+instructions are also used for functional testing of the ticket. -->
+
+
 ## Code review priority
 First, determine impact and complexity for the PR. More info can be found [here](https://app.gitbook.com/o/-MUKYLddTYNN3QEkR5JF/s/-MUhmjf5u2K1v39Mh4Ic/internal-processes-and-tools/code-reviews).
 
@@ -59,3 +66,7 @@ Then, we use a matrix to determine the priority of the Code Review. **Attach** t
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
 <!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 - [ ] I have added tests to cover my changes.
+
+## Reviewer checklist:
+<!--- To be ticked by the reviewer, not the author. -->
+- [ ] I have functionally tested this change using the 'How to test' instructions.
