@@ -33,7 +33,7 @@ instructions are also used for functional testing of the ticket. -->
 
 
 ## Code review priority
-First, determine impact and complexity for the PR. More info can be found [here](https://app.gitbook.com/o/-MUKYLddTYNN3QEkR5JF/s/-MUhmjf5u2K1v39Mh4Ic/internal-processes-and-tools/code-reviews).
+First, determine impact and complexity for the PR. More info can be found [here](https://app.notion.com/p/Code-Reviews-f84774e68457473fa97e1275ef90e3cc#98dc1650c44d466aa61afc910482cb56).
 
 Impact:
 - [ ] **Critical**: Users are blocked, data can be lost, or lives could literally be put at risk.
