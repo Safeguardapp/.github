@@ -33,28 +33,12 @@ instructions are also used for functional testing of the ticket. -->
 
 
 ## Code review priority
-First, determine impact and complexity for the PR. More info can be found [here](https://app.notion.com/p/Code-Reviews-f84774e68457473fa97e1275ef90e3cc#98dc1650c44d466aa61afc910482cb56).
+A bot labels this pull request on the two axes of the [risk matrix](https://app.notion.com/p/Code-Reviews-f84774e68457473fa97e1275ef90e3cc#98dc1650c44d466aa61afc910482cb56):
 
-Impact:
-- [ ] **Critical**: Users are blocked, data can be lost, or lives could literally be put at risk.
-- [ ] **Major**: Core flow breaks but a kludgy workaround exists. Bad, but not life‑threatening.
-- [ ] **Moderate**: Noticeable mis‑behaviour that irritates but doesn’t block the main task.
-- [ ] **Minor**: Cosmetic, edge‑case or pure convenience issue.
+- `impact:*` is an estimate. **Check it and change the label when you know the change better**, downgrading included. Impact is "what happens if this goes wrong?": critical (users blocked, data lost, lives at risk), major (a core flow breaks, workaround exists), moderate (irritates, does not block), minor (cosmetic, edge case, or internal-only: tooling, CI, scripts, feature flags toggled off, super-admin views).
+- `complexity:*` is measured from the diff (code lines, migrations, dependencies, spread, concurrency).
 
-Complexity:
-- [ ] **High**: ≥ 200 LOC or new architectural pattern, multi‑service migration, data back‑fill, heavy concurrency.
-- [ ] **Medium**: 20 – 200 LOC, contained to one module, no schema change.
-- [ ] **Low**: < 20 LOC, straightforward logic, no branching paths.
-- [ ] **Internal-only**: Change affects tooling, CI, scripts, feature flags toggled off, or super‑admin views.
-
-Then, we use a matrix to determine the priority of the Code Review. **Attach** the corresponding **label** to the PR, and the corresponding **team** as revievers.
-
-| Impact / Complexiteit | High | Medium | Low  | Internal-only |
-|-----------------------|:----:|:------:|:----:|:-------------:|
-| **Critical**          | CR1  |  CR1   | CR2  |     CR2       |
-| **Major**             | CR1  |  CR2   | CR2  |     CR3       |
-| **Moderate**          | CR2  |  CR2   | CR3  |     CR3       |
-| **Minor**             | CR2  |  CR3   | CR4  |     CR4       |
+The `CR*` label and the required approvals follow from the two labels: CR1 needs 2 approvals of which 1 senior, CR2 needs 1, CR3 and CR4 none. Add the corresponding **team** as reviewers.
 
 ## Information Security
 - [ ] Described changes in Privacy/Security, if any.
