@@ -33,12 +33,14 @@ instructions are also used for functional testing of the ticket. -->
 
 
 ## Code review priority
-A bot labels this pull request on the two axes of the [risk matrix](https://app.notion.com/p/Code-Reviews-f84774e68457473fa97e1275ef90e3cc#98dc1650c44d466aa61afc910482cb56):
+**Add the `impact:*` label yourself**: `impact:critical`, `impact:major`, `impact:moderate` or `impact:minor`. Impact is "what happens if this goes wrong?", and that lives outside the diff (a flag that is off, one organisation type, a workaround, a screen nothing reaches yet), so it is your call, not a script's. Definitions and the matrix are on the [Code Reviews page](https://app.notion.com/p/Code-Reviews-f84774e68457473fa97e1275ef90e3cc#98dc1650c44d466aa61afc910482cb56).
 
-- `impact:*` is an estimate. **Check it and change the label when you know the change better**, downgrading included. Impact is "what happens if this goes wrong?": critical (users blocked, data lost, lives at risk), major (a core flow breaks, workaround exists), moderate (irritates, does not block), minor (cosmetic, edge case, or internal-only: tooling, CI, scripts, feature flags toggled off, super-admin views).
-- `complexity:*` is measured from the diff (code lines, migrations, dependencies, spread, concurrency).
+- critical: users are blocked, data can be lost, or lives could be put at risk.
+- major: existing behaviour in a core flow changes for ordinary users; a workaround exists.
+- moderate: noticeable misbehaviour that irritates but does not block; a change that only adds new code paths, or only reaches admins.
+- minor: cosmetic, edge case, or internal-only (tooling, CI, scripts, tests, docs, feature flags toggled off, super-admin views). The bot sets this one itself for `Chore`, `Docs`, `Test`, `Maintenance`, `Dependency` and `Style` pull requests.
 
-The `CR*` label and the required approvals follow from the two labels: CR1 needs 2 approvals of which 1 senior, CR2 needs 1, CR3 and CR4 none. Add the corresponding **team** as reviewers.
+The bot measures `complexity:*` from the diff (code lines, migrations, dependencies, spread, concurrency) and, when configured, suggests an impact in its comment. The `CR*` label and the required approvals follow from the two labels: CR1 needs 2 approvals of which 1 senior, CR2 needs 1, CR3 and CR4 none. Add the corresponding **team** as reviewers.
 
 ## Information Security
 - [ ] Described changes in Privacy/Security, if any.
