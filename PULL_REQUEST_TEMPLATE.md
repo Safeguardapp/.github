@@ -38,9 +38,9 @@ instructions are also used for functional testing of the ticket. -->
 - critical: users are blocked, data can be lost, or lives could be put at risk.
 - major: existing behaviour in a core flow changes for ordinary users; a workaround exists.
 - moderate: noticeable misbehaviour that irritates but does not block; a change that only adds new code paths, or only reaches admins.
-- minor: cosmetic, edge case, or internal-only (tooling, CI, scripts, tests, docs, feature flags toggled off, super-admin views). The bot sets this one itself for `Chore`, `Docs`, `Test`, `Maintenance`, `Dependency` and `Style` pull requests.
+- minor: cosmetic, edge case, or internal-only (tooling, CI, scripts, tests, docs, feature flags toggled off, super-admin views). The bot sets this one itself for `Chore`, `Docs`, `Test`, `Maintenance`, `Dependency` and `Style` pull requests, and for any pull request that only touches docs, locale or style files.
 
-The bot measures `complexity:*` from the diff (code lines, migrations, dependencies, spread, concurrency) and, when configured, suggests an impact in its comment. The `CR*` label and the required approvals follow from the two labels: CR1 needs 2 approvals of which 1 senior, CR2 needs 1, CR3 and CR4 none. Add the corresponding **team** as reviewers.
+The bot measures `complexity:*` from the diff (code lines, migrations, dependencies, spread, concurrency) and, when configured, suggests an impact in its comment. The `CR*` label and the required approvals follow from the two labels: CR1 needs 1 approval, from a senior, CR2 needs 1, CR3 and CR4 none. Add the corresponding **team** as reviewers.
 
 ## Information Security
 - [ ] Described changes in Privacy/Security, if any.
