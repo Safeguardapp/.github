@@ -33,14 +33,14 @@ instructions are also used for functional testing of the ticket. -->
 
 
 ## Code review priority
-**Add the `impact:*` label yourself**: `impact:critical`, `impact:major`, `impact:moderate` or `impact:minor`. Impact is "what happens if this goes wrong?", and that lives outside the diff (a flag that is off, one organisation type, a workaround, a screen nothing reaches yet), so it is your call, not a script's. Definitions and the matrix are on the [Code Reviews page](https://app.notion.com/p/Code-Reviews-f84774e68457473fa97e1275ef90e3cc#98dc1650c44d466aa61afc910482cb56).
+**Add the `impact:*` label yourself**: `impact:critical`, `impact:major`, `impact:moderate` or `impact:minor`. Impact is "what happens if this goes wrong?", answered from what the change touches with the list below, not from how bad a mistake would feel; it is your call, not a script's. Definitions and the matrix are on the [Code Reviews page](https://app.notion.com/p/Code-Reviews-f84774e68457473fa97e1275ef90e3cc#98dc1650c44d466aa61afc910482cb56).
 
-Impact follows from what the change touches, not from how bad a mistake would feel. Walk the list from the top; the first line that fits is the label.
+Two things are minor whatever they touch: code that nothing calls yet or that sits behind a feature flag that is off, and accessibility-only work. For everything else walk the list from the top; the first line that fits is the label. Touches means the code that runs in that flow, not code near it.
 
 - critical: the change touches the alarm path (raising, receiving, escalating or handling an alert), push-to-talk, the lone-worker session, login or two-factor authentication, or a migration that changes or deletes existing data. A store release that cannot be rolled back is critical too.
-- major: the change touches behaviour ordinary users see every day in a core flow outside the alarm path (chat, presence, location, notifications), or roles, permissions, filters, or which data an organisation or role can see. An admin screen counts here when a mistake there decides what a user may do or see.
-- moderate: the change touches a flow users see now and then (settings, reports, exports, email and SMS texts, translations), or only administrators, without any effect on permissions or visibility.
-- minor: the change touches only super-admin screens, tooling, CI, scripts, tests or docs, sits behind a feature flag that is off, or adds code that nothing calls yet. Accessibility-only work is minor too. The bot sets this one itself for `Chore`, `Docs`, `Test`, `Maintenance`, `Dependency` and `Style` pull requests, and for any pull request that only touches docs, locale or style files.
+- major: the change touches behaviour ordinary users see every day in a core flow outside the alarm path (chat, presence, location, notifications), or roles, permissions, filters, or which data an organisation or role can see.
+- moderate: the change touches a flow users see now and then (settings, reports, exports, email and SMS texts), or only administrators.
+- minor: the change touches only super-admin screens, tooling, CI, scripts, tests or docs. The bot sets this one itself for `Chore`, `Docs`, `Test`, `Maintenance`, `Dependency` and `Style` pull requests, and for any pull request that only touches docs, locale or style files.
 
 A reviewer may raise the label, never lower it. How sure you are that nothing changes does not lower it either; put that measurement in the PR for the reviewer.
 
