@@ -37,7 +37,8 @@ instructions are also used for functional testing of the ticket. -->
 
 Two things are minor whatever they touch: code that nothing calls yet or that sits behind a feature flag that is off, and accessibility-only work. For everything else walk the list from the top; the first line that fits is the label. Touches means the code that runs in that flow, not code near it.
 
-- critical: the change touches the alarm path (raising, receiving, escalating or handling an alert), push-to-talk, the lone-worker session, login or two-factor authentication, or a migration that changes or deletes existing data. A store release that cannot be rolled back is critical too.
+- critical: the change touches the alarm path (raising, receiving, escalating or handling an alert), the lone-worker alarm path (detection, check-in, the warning countdown and sending the alarm), push-to-talk, login or two-factor authentication, or a migration that changes or deletes existing data. A store release that cannot be rolled back is critical too.
+  Other lone-worker work (the start wizard, screen layout, banners, onboarding) follows the lines below like any other screen.
 - major: the change touches behaviour ordinary users see every day in a core flow outside the alarm path (chat, presence, location, notifications), or roles, permissions, filters, or which data an organisation or role can see.
 - moderate: the change touches a flow users see now and then (settings, reports, exports, email and SMS texts), or only administrators.
 - minor: the change touches only super-admin screens, tooling, CI, scripts, tests or docs. The bot sets this one itself for `Chore`, `Docs`, `Test`, `Maintenance`, `Dependency` and `Style` pull requests, and for any pull request that only touches docs, locale or style files.
